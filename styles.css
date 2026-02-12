@@ -1,6 +1,8 @@
 /* ========================================
-   SEPARATOR LINE STYLING
+   GENERAL STYLES & LAYOUT
    ======================================== */
+
+/* Horizontal line styling */
 .line{
     border: 0;
     height: 2.5px;
@@ -8,106 +10,128 @@
     margin: 20px 0;
 }
 
-/* ========================================
-   CONTAINER & LAYOUT
-   ======================================== */
+/* Main container - centered with max width */
 .container{
-    max-width: 900px;     /* Limits content width for readability */
-    margin: 0 auto;       /* Centers the container */
-    padding: 20px 40px;   /* Padding around content */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;     /* Improves text readability */
+    line-height: 1.6;
 }
 
 /* ========================================
-   HEADER STYLING (Name & Title)
+   HEADER & TITLE STYLES
    ======================================== */
+
+/* Main name heading */
 .name{
     padding: 10px 0;
-    font-size: 36px;      /* Large heading for name */
+    font-size: 36px;
     font-weight: bold;
     color: #000;
     margin-bottom: 5px;
 }
 
+/* Job title */
 .title{
-    font-size: 24px;      /* Professional title styling */
+    font-size: 24px;
     font-weight: 600;
-    color: #319F45;       /* Green accent color */
+    color: #319F45;
+    margin-bottom: 15px;
+}
+
 /* ========================================
-   HEADING STYLES
+   SECTION HEADINGS
    ======================================== */
+
+/* Secondary headings (h2) - Section titles */
 h2{
-    color: #319F45;               /* Main section headers in green */
+    color: #319F45;
     font-size: 22px;
     font-weight: bold;
     margin-top: 25px;
     margin-bottom: 15px;
-    border-bottom: 2px solid #319F45;  /* Underline border */
+    border-bottom: 2px solid #319F45;
     padding-bottom: 8px;
 }
 
+/* Tertiary headings (h3) - Job titles, education */
 h3{
-    color: #1D73C3;               /* Job titles and company names in blue */
+    color: #1D73C3;
     font-size: 16px;
     font-weight: bold;
     margin: 15px 0 5px 0;
 }
 
-h4{
-    color: #1D73C3;               /* Project titles in blue */
-
+/* Quaternary headings (h4) - Project titles */
 h4{
     color: #1D73C3;
     font-size: 14px;
     font-weight: 600;
-/* ========================================
-   SECTION & CONTACT STYLING
-   ======================================== */
-section{
-    margin-bottom: 25px;  /* Space between major sections */
+    margin: 12px 0 8px 0;
 }
 
+/* ========================================
+   SECTION LAYOUTS
+   ======================================== */
+
+/* General section spacing */
+section{
+    margin-bottom: 25px;
+}
+
+/* Contact info and summary spacing */
 .contact-info p,
 .professional-summary p{
     margin: 10px 0;
 }
 
+/* Professional summary box styling */
 .professional-summary{
-    background-color: #f9f9f9;    /* Light gray background */
-    padding: 15px;
-    border-left: 4px solid #319F45;  /* Green left border accent */
     background-color: #f9f9f9;
     padding: 15px;
     border-left: 4px solid #319F45;
+    border-radius: 4px;
+}
+
 /* ========================================
-   SKILLS SECTION - GRID LAYOUT
+   SKILLS GRID LAYOUT
    ======================================== */
+
+/* Grid for skills categories - 2 columns */
 .skills-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;  /* 2 columns layout */
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-top: 15px;
 }
 
+/* Individual skill category box */
 .skill-category{
-    background-color: #f5f5f5;        /* Subtle gray background */
+    background-color: #f5f5f5;
     padding: 12px;
     border-radius: 4px;
-    border-left: 3px solid #1D73C3;   /* Blue left border accent */
+    border-left: 3px solid #1D73C3;
 }
 
+/* Skill category heading styling */
 .skill-category h4{
     margin-top: 0;
     margin-bottom: 8px;
 }
 
+/* Skill category paragraph styling */
 .skill-category p{
     margin: 0;
     font-size: 13px;
+    color: #333;
+}
+
 /* ========================================
    EDUCATION & EXPERIENCE ENTRIES
    ======================================== */
+
+/* Education entry spacing */
 .education-entry,
 .job-entry,
 .activity-entry{
@@ -115,97 +139,108 @@ section{
     padding-bottom: 15px;
 }
 
+/* Job header layout */
 .job-header,
 .education-entry > div:first-child{
     margin-bottom: 10px;
 }
 
+/* Institution and company names */
 .institution,
 .company{
-    font-weight: 600;     /* Bold company/institution names */
+    font-weight: 600;
     color: #333;
     margin: 5px 0;
     font-size: 15px;
 }
 
+/* Date styling - italicized and muted */
 .date{
-    color: #666;          /* Gray text for dates */
+    color: #666;
     font-size: 13px;
     margin: 5px 0 15px 0;
-    font-style: italic;   /* Italicized for distinction */
+    font-style: italic;
+}
 
-.date{
-/* ========================================
-   PROJECT TITLES & ACHIEVEMENTS
-   ======================================== */
+/* Project title styling */
 .project-title{
-    color: #1D73C3;       /* Blue color for project names */
+    color: #1D73C3;
     font-size: 14px;
     font-weight: 600;
     margin: 12px 0 8px 0;
 }
 
+/* ========================================
+   LISTS & ACHIEVEMENTS
+   ======================================== */
+
+/* Achievement and bullet point list */
 .achievement-list{
     margin: 10px 0;
-    padding-left: 25px;   /* Indent bullet points */
+    padding-left: 25px;
     color: #333;
 }
 
+/* List item styling */
 .achievement-list li{
-    margin-bottom: 6px;   /* Space between bullet points */
+    margin-bottom: 6px;
     font-size: 13px;
+    line-height: 1.5;
+}
+
 /* ========================================
-   LINK STYLING & INTERACTIONS
+   LINKS & INTERACTIVE ELEMENTS
    ======================================== */
+
+/* Email link styling */
 .email{
-    color: #1D73C3;       /* Blue for email links */
+    color: #1D73C3;
     text-decoration: none;
     font-weight: 500;
 }
 
+/* Email link hover effect */
 .email:hover{
-    text-decoration: underline;  /* Underline on hover */
+    text-decoration: underline;
 }
 
+/* Email link active state */
 .email:active{
-    color: #0a4fa0;       /* Darker blue when active */
+    color: #0a4fa0;
 }
 
+/* General paragraph links and social links */
 p > a,
 .social-link{
-    color: #1D73C3;       /* Blue for all links */
+    color: #1D73C3;
     text-decoration: none;
     font-weight: 500;
 }
 
+/* Link hover effect */
 p > a:hover,
 .social-link:hover{
-    text-decoration: underline;  /* Underline on hover */
+    text-decoration: underline;
 }
 
+/* Link active state */
 p > a:active,
 .social-link:active{
+    color: #0a4fa0;
+}
+
 /* ========================================
    SOCIAL LINKS & FOOTER
    ======================================== */
-.social-links{
-    text-align: center;   /* Center the social links */
-    font-size: 15px;
-    margin: 15px 0;
-}
 
-footer{
-    text-align: center;   /* Center footer content */
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;  /* Border separator */
-    color: #666;          /* Gray text */
-    font-size: 12px;      /* Smaller font for footer */
+/* Social links container - centered layout */
+.social-links{
     text-align: center;
     font-size: 15px;
     margin: 15px 0;
 }
 
+/* Footer styling */
 footer{
     text-align: center;
     margin-top: 30px;
